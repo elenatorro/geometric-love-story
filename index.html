@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La historia de amor entre el círculo y el triángulo</title>
+    <style>
+        :root {
+            --item-width: 559px;
+            --item-height: 794px;
+            --iframe-scale: 0.5;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(var(--item-width), 1fr));
+            grid-auto-rows: var(--item-height);
+            gap: 10px;
+            max-width: 100vw;
+            padding: 20px;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+        .item {
+            width: var(--item-width);
+            height: var(--item-height);
+            overflow: hidden;
+            position: relative;
+        }
+        iframe {
+            width: calc(100% / var(--iframe-scale));
+            height: calc(100% / var(--iframe-scale));
+            border: none;
+            transform: scale(var(--iframe-scale));
+            transform-origin: top left;
+            pointer-events: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">
+            <iframe src="/pages/00/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/01/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/02/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/03/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/04/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/05/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/06/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/07/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/08/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/09/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/10/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe src="/pages/11/index.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
